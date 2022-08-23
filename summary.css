@@ -1,5 +1,8 @@
-.list-details{
-    width: 200px;
-    min-height: 300px;
-    height: fit-content;
+#graph{
+    display: inline-block ;
+    height: 700px;
+}
+#listDiv{
+    display: inline-block ;
+    height: 700px;
 }

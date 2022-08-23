@@ -1,5 +1,15 @@
-.list-details{
-    width: 300px;
-    min-height: 550px;
-    height: fit-content;
+*{
+   margin: 0px;
+   padding: 0px;
+}
+.main{
+   height: 500px;  
+}
+#listDiv{
+   display: inline-block ;
+   height: 400px;
+}
+.list-add-icon{
+   top: 200px;
+   left: 400px;
 }

@@ -1,0 +1,12 @@
+.main{
+    width:auto;
+    height: 600px;;
+}
+#listDiv{
+    display: inline-block ;
+    height: 450px;
+}
+.list-add-icon{
+    top:200px;
+    left:400px;
+}

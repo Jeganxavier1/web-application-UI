@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>list&card</title>
-    <link rel="stylesheet" href="list-card.css">
+    <link rel="stylesheet" href="list&card.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-</head>
     <!-- CSS only -->
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -22,58 +21,80 @@
     crossorigin="anonymous"></script>
     </script>
 </head>
-<body class="m-2">
-    <div class="d-flex flex-wrap align-items-baseline justify-content-between">
-        <h4 class="float-left">Welcome <span id="username">Fatima</span>,</h4>
-        <p>
-           <a href="summary.html" class="text-decoration-none text-black">Summary</a> | <a href="kanban-login page.html" class="text-decoration-none text-black">Logout</a>       
-        </p>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <h3 class="float-left">Welcome <span id="username">Fatima</span>,</h3>
+      <h5>
+        <a href="summary.html" class="text-decoration-none text-black"
+          ><iconify-icon
+            icon="bi:clipboard2-data-fill"
+            style="color: blue"
+            width="20"
+            height="15"
+          ></iconify-icon
+          >Summary
+        </a>
+        |
+        <a
+          href="kanban-login page.html"
+          class="text-decoration-none text-black"
+          ><i class="fa-solid fa-power-off"></i> Logout</a
+        >
+      </h5>
     </div>
-    <div class="d-flex flex-wrap justify-content-center">
-        <div class="list-details border border-light p-3 shadow-lg m-3" >
-          
-               <div class="dropdown ">
-                 <button class="btn btn-secondary dropdown-toggle w-50" type="button" data-bs-toggle="dropdown"    aria-expanded="false">
-                    todo
-                 </button>
-
-                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Edit</a></li>
-                    <li><a class="dropdown-item" href="#">Delete List</a></li>
-                 </ul>
-               </div>
-           
-            <div class="card-details border border-light shadow-lg mt-3 p-1">
-               <div class="dropdown ">
-                   <button class="btn btn-light dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"    aria-expanded="false">
-                     <small>Submit Assignment</small>
-                   </button>
-
-                   <ul class="dropdown-menu">
-                     <li><a class="dropdown-item" href="#">Edit</a></li>
-                     <li><a class="dropdown-item" href="#">Delete</a></li>
-                   </ul>
-               </div>
-               <p class="text-center"><small>submit the modern application assignment</small></p>
-               <p class="d-flex justify-content-end"><small>2022/10/02</small></p>
-               <div class="dropdown  d-flex justify-content-end">
-                <button class="btn btn-secondary dropdown-toggle w-50" type="button" data-bs-toggle="dropdown"    aria-expanded="false">
-                  move
+  </nav>
+  <section>
+    <div class="main position-relative">
+      <!-- list creation -->
+      <div class="card position-absolute col-3 border overflow-auto shadow-lg p-0 m-2" id="listDiv">
+        <div class="card-header bg-info">
+          <div class="dropdown ">
+            <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"    aria-expanded="false">
+             todo
+            </button>
+            <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="#">Edit</a></li>
+             <li><a class="dropdown-item" href="#">Delete List</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card m-1 ">
+            <div class="card-header bg-success">
+              <div class="dropdown ">
+                <button class="btn btn-light btn-sm dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"    aria-expanded="false">
+                 submit assignment
                 </button>
-
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="multiple-list.html">list-2</a></li>
+                 <li><a class="dropdown-item" href="#">Edit</a></li>
+                 <li><a class="dropdown-item" href="#">Delete card</a></li>
                 </ul>
               </div>
-              </div>
-
-            <div class="d-flex justify-content-center align-items-center add-icon mt-3">
-              <a href="card-form.html"><i class="fa-solid fa-circle-plus fa-2x mt-l"></i></a>
             </div>
+            <div class="card-body">
+              <p class="text-center"><small>submit the modern application assignment</small></p>
+              <p class="text-right"><small>2022/10/02</small></p>
+            </div>
+  
+            <div class="card-footer">
+              <p class="d-flex justify-content-end m-0"><a class="text-decoration-none text-dark" href="multiple-list.html"><small>move the card</small><i class="fa-solid fa-arrow-right-to-file"></i></a></p>
+            </div>
+          </div>
+  
+          <div class="d-flex justify-content-center align-items-center add-icon mt-3">
+            <a href="card-form.html"><i class="fa-solid fa-circle-plus fa-2x mt-l"></i></a>
+          </div>
         </div>
-        <div class="d-flex justify-content-center align-items-center add-icon">
-         <a href="add-list-form.html"><i class="fa-solid fa-circle-plus fa-5x mt-l"></i></a>
-        </div>
+      </div>
+      <!-- list creation -->
+      
+      <!-- add list icon -->
+      <div class="list-add-icon position-absolute">
+        <a href="list-form.html"><i class="fa-solid fa-circle-plus fa-5x mt-l"></i></a>
+      </div >
+      <!-- add list icon -->
     </div>
+  </section>
 </body>
 </html>
