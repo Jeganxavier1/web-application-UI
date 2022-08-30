@@ -23,75 +23,79 @@
         </script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <h3 class="float-left">Welcome <span id="username">Fatima</span>,</h3>
-          <h5>
-            <a href="summary.html" class="text-decoration-none text-black"
-              ><iconify-icon
-                icon="bi:clipboard2-data-fill"
-                style="color: blue"
-                width="20"
-                height="15"
-              ></iconify-icon
-              >Summary
-            </a>
-            |
-            <a
-              href="kanban-login page.html"
-              class="text-decoration-none text-black"
-              ><i class="fa-solid fa-power-off"></i> Logout</a
-            >
-          </h5>
+
+    <nav class="nav-bar bg-light">
+        <div class="container-fluid nav-containerFluid h-100">
+            <div class="row h-100 justify-content-between align-items-center">
+                <div class="col ">
+                  <p class="font-weight-bold m-0">Welcome Fatima,</p>
+                </div>
+                <div class="col text-end">
+                 <a href="summary.html" class="text-decoration-none text-black"><iconify-icon icon="bi:clipboard2-data-fill" style="color: blue;" width="20" height="15"></iconify-icon>Summary </a> | <a href="kanban-login page.html" class="text-decoration-none text-black"><i class="fa-solid fa-power-off"></i> Logout</a>
+                </div>
+            </div>
         </div>
     </nav>
 
     <section>
-        <div class="main position-relative col-12">
-            <div class="card position-absolute top-50 start-50 translate-middle col-5 p-0 shadow-lg">
-                <form>
-                    <div class="card-header bg-primary">
-                        <h3 class="text-center text-white">Create a card</h3>
+        <div class="container-fluid section-containerFluid">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-sm-6 col-md-5 col-lg-6">
+                    <div class="card shadow-lg">
+                        <div class="card-header bg-primary">
+                            <p class="text-center text-white h3 m-0">Create a card</p>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="row input-group m-1">
+                                    <label for="inputEmail3" class="col-sm-4 col-md-4  col-form-label">Name</label>
+                                    <div class="col-sm-12 col-md-8">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"    aria-expanded="false">
+                                            todo
+                                        </button>
+                              
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">List-2</a></li>
+                                            <li><a class="dropdown-item" href="#">List-3</a></li>
+                                            <li><a class="dropdown-item" href="#">List-4</a></li>
+                                            <li><a class="dropdown-item" href="#">List-5</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row input-group m-1">
+                                    <label for="inputEmail3" class="col-sm-4 col-md-4  col-form-label">Title</label>
+                                    <div class="col-sm-12 col-md-8">
+                                      <input type="email" placeholder="Submit Assignment" class="form-control" id="inputEmail3">
+                                    </div>
+                                </div>
+                                <div class="row input-group m-1">
+                                    <label class="col-sm-5 col-md-4 col-form-label">content</label>
+                                    <div class="col-sm-12 col-md-8">
+                                      <textarea class="form-control" cols="30"
+                                      rows="4" id="floatingTextarea2"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row input-group m-1 ">
+                                    <label class="col-sm-6 col-md-4 col-form-label">Deadline</label>
+                                    <div class="col-sm-12 col-md-8 ">
+                                        <input placeholder="Select date" type="date" id="example" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row input-group form-switch ms-1 p-0">
+                                    <label class="col-sm-8 col-md-6 col-form-label" for="flexSwitchCheckDefault">mark as completed</label>
+                                    <div class="col-sm-4 col-md-1 mt-2">
+                                        <p><input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked></p>
+                                    </div>
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="col-sm-12 text-sm-center col-md-12 text-md-center">
+                                        <a class="text-center" href="list&card.html"><button type="button" class="btn btn-primary"><iconify-icon icon="clarity:star-solid" style="color: white;" width="10" height="10"></iconify-icon> save</button></a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="card-body">
-        
-                        <div class="form-group row m-1">
-                            <label class="col-sm-2">Name</label>
-                            <div class="col-sm-10 p-0">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"    aria-expanded="false">
-                                todo
-                                </button>
-                  
-                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">List-2</a></li>
-                                <li><a class="dropdown-item" href="#">List-3</a></li>
-                                <li><a class="dropdown-item" href="#">List-4</a></li>
-                                <li><a class="dropdown-item" href="#">List-5</a></li>
-                             </ul>
-                            </div>
-                        </div>
-        
-                        <div class="form-group row m-1">
-                            <label for="inputName" class="col-2 col-form-label">Title</label>
-                            <input class="text-center col-10" type="text" placeholder="Submit Assignment">
-                        </div>
-                        <div class="form-group row m-1">
-                            <label class="col-2">Content</label>
-                            <textarea class="col-10" name="" id="" cols="30" rows="4"></textarea>
-                        </div>
-                        <div class="form-group row m-1">
-                            <label class="col-2 col-form-label">Deadline</label>
-                            <input class="text-center col-10" type="date" placeholder="Submit Assignment">
-                        </div>
-                        <div class="form-group row m-1 px-0 form-switch">
-                            <label class="form-check-label col-4 p-2" for="flexSwitchCheckChecked">mark as completed</label>
-                            <input class="form-check-input col-8 mx-2 mt-2 pt-3" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-                        </div>
-                    </div>
-                    <div class="card-footer d-flex justify-content-center">
-                        <a class="text-center" href="list&card.html"><button type="button" class="btn btn-primary"><iconify-icon icon="clarity:star-solid" style="color: white;" width="10" height="10"></iconify-icon> save</button></a>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
     </section>

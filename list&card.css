@@ -1,12 +1,9 @@
-.main{
-    width:auto;
-    height: 600px;;
+.nav-bar{
+    height:50px;
+}
+.section-containerFluid{
+    height: 550px;
 }
 #listDiv{
-    display: inline-block ;
     height: 450px;
-}
-.list-add-icon{
-    top:200px;
-    left:400px;
 }

@@ -22,31 +22,82 @@
     </script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <h3 class="float-left">Welcome <span id="username">Fatima</span>,</h3>
-      <h5>
-        <a href="summary.html" class="text-decoration-none text-black"
-          ><iconify-icon
-            icon="bi:clipboard2-data-fill"
-            style="color: blue"
-            width="20"
-            height="15"
-          ></iconify-icon
-          >Summary
-        </a>
-        |
-        <a
-          href="kanban-login page.html"
-          class="text-decoration-none text-black"
-          ><i class="fa-solid fa-power-off"></i> Logout</a
-        >
-      </h5>
+  <nav class="nav-bar bg-light">
+    <div class="container-fluid nav-containerFluid h-100">
+      <div class="row h-100 justify-content-between align-items-center">
+        <div class="col ">
+          <p class="font-weight-bold m-0">Welcome Fatima,</p>
+        </div>
+        <div class="col text-end">
+          <a href="summary.html" class="text-decoration-none text-black"><iconify-icon icon="bi:clipboard2-data-fill" style="color: blue;" width="20" height="15"></iconify-icon>Summary </a> | <a href="kanban-login page.html" class="text-decoration-none text-black"><i class="fa-solid fa-power-off"></i> Logout</a>
+        </div>
+      </div>
     </div>
   </nav>
+
   <section>
+    <div class="container-fluid section-containerFluid">
+      <div class="row h-100 align-items-center justify-content-sm-center">
+        <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3">
+          <div class="card overflow-auto shadow-lg" id="listDiv">
+            <div class="card-header bg-primary">
+              <div class="dropdown ">
+                <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"    aria-expanded="false">
+                 todo
+                </button>
+                <ul class="dropdown-menu">
+                 <li><a class="dropdown-item" href="#">Edit</a></li>
+                 <li><a class="dropdown-item" href="#">Delete List</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card shadow-lg">
+                    <div class="card-header">
+                      <button class="btn btn-sm btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"    aria-expanded="false">
+                      Submit Assignment</button>
+                      <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Edit</a></li>
+                       <li><a class="dropdown-item" href="#">Delete card</a></li>
+                      </ul>
+                    </div>
+                    <div class="card-body">
+                      <div class="row text-center">
+                        <div class="col">
+                          <p><small>submit the modern application assignment</small></p>
+                        </div>
+                      </div>
+                      <div class="row text-end justify-content-end">
+                        <div class="col">
+                          <p><small>2022/10/02</small></p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                      <p class="d-flex justify-content-end m-0"><a class="text-decoration-none text-dark" href="multiple-list.html"><small>move the card</small><i class="fa-solid fa-arrow-right-to-file"></i></a></p>
+                    </div>
+  
+                  </div>
+                </div>
+              </div>
+              <p class="text-center mt-3"><a class="" href="card-form.html"><i class="fa-solid fa-circle-plus fa-2x mt-l"></i></a></p>
+            </div>
+            <div class="card-footer">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 text-sm-center col-md-2">
+          <a href="list-form.html"><i class="fa-solid fa-circle-plus fa-5x"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section>
     <div class="main position-relative">
-      <!-- list creation -->
+
       <div class="card position-absolute col-3 border overflow-auto shadow-lg p-0 m-2" id="listDiv">
         <div class="card-header bg-info">
           <div class="dropdown ">
@@ -64,7 +115,6 @@
             <div class="card-header bg-success">
               <div class="dropdown ">
                 <button class="btn btn-light btn-sm dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"    aria-expanded="false">
-                 submit assignment
                 </button>
                 <ul class="dropdown-menu">
                  <li><a class="dropdown-item" href="#">Edit</a></li>
@@ -87,14 +137,12 @@
           </div>
         </div>
       </div>
-      <!-- list creation -->
-      
-      <!-- add list icon -->
+
       <div class="list-add-icon position-absolute">
         <a href="list-form.html"><i class="fa-solid fa-circle-plus fa-5x mt-l"></i></a>
       </div >
-      <!-- add list icon -->
+
     </div>
-  </section>
+  </section> -->
 </body>
 </html>

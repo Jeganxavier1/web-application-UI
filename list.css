@@ -1,15 +1,10 @@
-*{
-   margin: 0px;
-   padding: 0px;
+.nav-bar{
+   height:50px;
 }
-.main{
-   height: 500px;  
+.section-containerFluid{
+   height: 550px;
 }
 #listDiv{
-   display: inline-block ;
-   height: 400px;
+   height: 450px;
 }
-.list-add-icon{
-   top: 200px;
-   left: 400px;
-}
+

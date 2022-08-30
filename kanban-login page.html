@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login page</title>
@@ -21,16 +21,34 @@
     ></script>
     <link rel="stylesheet" href="kanban-login page.css" />
   </head>
-  <body>
-    <div class="container position-relative col-3 ">
-      <div class="position-absolute top-50 ">
-        <input type="email" class="form-control text-center "
-        placeholder="name"
-        id="userName"
-        />
-        <p class="text-center"><a class="text-center" href="add-list.html"><button type="button" class="btn btn-primary mt-3 ">login<span class="iconify" data-icon="bx:skip-next" data-width="20" data-height="20"></span></button></a></p>
+  <body> 
+    <div class="container-fluid">
+      <div class="row h-50 justify-content-center align-items-end">
+        <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-3">
+          <input
+            type="email"
+            class="form-control text-center"
+            placeholder="name"
+            id="userName"
+          />
+        </div>
+      </div>
+
+      <div class="row justify-content-center ">
+        <div class="col-sm-5  col-3">
+          <p class="text-center">
+            <a class="text-center" href="add-list.html"
+              ><button type="button" class="btn btn-primary mt-3">
+                login<span
+                  class="iconify"
+                  data-icon="bx:skip-next"
+                  data-width="20"
+                  data-height="20"
+                ></span></button
+            ></a>
+          </p>
+        </div>
       </div>
     </div>
-    <script src="kanban.js"></script>
   </body>
 </html>

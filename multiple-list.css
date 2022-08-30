@@ -1,8 +1,12 @@
-#listDiv-1{
-    display: inline-block ;
-    height: 450px;
+.nav-bar{
+    height:50px;
 }
-#listDiv-2{
-    display: inline-block ;
-    height: 450px;
+.section-containerFluid{
+    height: 550px;
 }
+#listDiv{
+   height: 450px;
+}
+/* #listDiv-2{
+    min-height: 400px;
+} */

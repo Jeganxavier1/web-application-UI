@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>summary</title>
-    <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="summary.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
     <!-- CSS only -->
@@ -26,73 +26,68 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">  
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <h3 class="float-left">Welcome <span id="username">Fatima</span>,</h3>
-          <h5>
-            <a href="summary.html" class="text-decoration-none text-black"
-              ><iconify-icon
-                icon="bi:clipboard2-data-fill"
-                style="color: blue"
-                width="20"
-                height="15"
-              ></iconify-icon
-              >Summary
-            </a>
-            |
-            <a
-              href="kanban-login page.html"
-              class="text-decoration-none text-black"
-              ><i class="fa-solid fa-power-off"></i> Logout</a
-            >
-          </h5>
-        </div>
-    </nav>
 
-    <div class="d-flex ms-3">
-        <!-- list creation -->
-        <div class="card col-3 border shadow-lg p-0 m-1" id="graph">
-            <div class="card-header bg-info">
-                <div class="dropdown ">
-                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"    aria-expanded="false">
-                     todo
-                    </button>
-    
-                    <ul class="dropdown-menu">
-                     <li><a class="dropdown-item" href="#">Edit</a></li>
-                     <li><a class="dropdown-item" href="#">Delete List</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card-body">
-                <canvas id="myChart"></canvas>
-            </div>
+  <nav class="nav-bar bg-light">
+    <div class="container-fluid nav-containerFluid h-100">
+      <div class="row h-100 justify-content-between align-items-center">
+        <div class="col">
+          <p class="font-weight-bold m-0">Welcome Fatima,</p>
         </div>
-        <!-- list creation -->
-
-        <!-- list creation -->
-        <div class="card col-3 border shadow-lg p-0 m-1" id="listDiv">
-            <div class="card-header bg-info">
-                <div class="dropdown ">
-                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"    aria-expanded="false">
-                     todo
-                    </button>
-    
-                    <ul class="dropdown-menu">
-                     <li><a class="dropdown-item" href="#">Edit</a></li>
-                     <li><a class="dropdown-item" href="#">Delete List</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card-body">
-             <p class="text-center text-danger"><small>0/1 compete</small></p>
-             <p class="text-center text-danger"><small>1/1 passed daadline</small></p>
-            </div>
+        <div class="col text-end">
+          <a href="summary.html" class="text-decoration-none text-black"><iconify-icon icon="bi:clipboard2-data-fill" style="color: blue;" width="20" height="15"></iconify-icon>Summary </a> | <a href="kanban-login page.html" class="text-decoration-none text-black"><i class="fa-solid fa-power-off"></i> Logout</a>
         </div>
-        <!-- list creation -->
+      </div>
     </div>
+  </nav>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-    <script src="summary.js"></script>
+  <section>
+    <div class="container-fluid section-containerFluid">
+      <div class="row h-100 align-items-center justify-content-sm-center">
+        <div class="col-sm-7 col-md-4 col-lg-3 col-xl-3">
+          <div class="card border shadow-lg" id="listDiv-1">
+            <div class="card-header bg-info ">
+              <div class="dropdown ">
+                <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"    aria-expanded="false">
+                  todo
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                  <li><a class="dropdown-item" href="#">Delete List</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="text-center text-success"><small>9/9 complete</small></p>
+              <p class="text-center"><small>tasks</small></p>
+              <canvas id="myChart"></canvas>
+            </div>
+          </div> 
+        </div>
+        <div class="col-sm-7 col-md-4 col-lg-3 col-xl-3">
+          <div class="card border shadow-lg" id="listDiv-2">
+            <div class="card-header bg-info ">
+              <div class="dropdown ">
+                <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"    aria-expanded="false">
+                  thej
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                  <li><a class="dropdown-item" href="#">Delete List</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="text-center text-danger"><small>0/1 complete</small></p>
+              <p class="text-center text-danger"><small>1/1 passed deadline</small></p>
+              <canvas id="myChart"></canvas>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script src="summary.js"></script>
 </body>
 </html>

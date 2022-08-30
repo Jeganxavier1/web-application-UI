@@ -1,8 +1,13 @@
-#graph{
-    display: inline-block ;
+/* #graph{
     height: 700px;
+} */
+.nav-bar{
+    height:50px;
 }
-#listDiv{
-    display: inline-block ;
-    height: 700px;
+.section-containerFluid{
+    height: 550px;
 }
+#listDiv-1,#listDiv-2{
+    height:450px;
+}
+
